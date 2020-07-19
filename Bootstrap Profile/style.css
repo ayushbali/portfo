@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rambla&display=swap');
+
+
+body{
+  margin: 0;
+  padding: 0;
+
+}
+
+:root{
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-yellow: #b97d10;
+  --color-red: #760C10;
+  --color-red-dark: #661717;
+  --color-border: #333;
+  --font-staat: 'Staatliches', cursive;
+  --font-os: 'Open Sans', sans-serif;
+  --font-osw: 'Oswald', sans-serif;
+  --font-ram: 'Rambla', sans-serif;
+}
+
+/* Global Classes */
+
+.font-staat{
+  font: normal 400 18px var(--font-staat);
+}
+.font-os{
+  font: normal 300 18px var(--font-os);
+}
+.font-osw{
+  font: normal 300 18px var(--font-osw);
+}
+
+.font-size-40{
+  font-size: 40px;
+}
+.font-size-34{
+  font-size: 34px;
+}
+.font-size-27{
+  font-size: 27px;
+}
+.font-size-20{
+  font-size: 20px;
+}
+.font-size-16{
+  font-size: 16px;
+}
+.font-size-10{
+  font-size: 10px;
+}
+
+.bgcolor-black{
+  background-color: var(--color-black);
+}
+
+
+#header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  transition: left .5s ease;
+}
+
+#header nav{
+  height: 100vh;
+}
+
+#header .site-title .navbar-brand{
+  letter-spacing: 2px;
+  color: var(--color-yellow);
+}
+
+#header .nav-link{
+  margin: .7rem 1rem;
+  color: var(--color-yellow)!important;
+}
+#header .nav-link:hover{
+  color: var(--color-white)!important;
+}
+
+#header .toggle-button{
+  background: none;
+  color: var(--color-black);
+  position: fixed;
+  top: 25px;
+  right: 20px;
+  border: none;
+}
+
+.toggle-left{
+  left: 0 !important;
+  width: 1000px !important;
+}
+
+
+
+/* sectional-area */
+
+.site-banner .banner-area{
+  background: url(./illustration-of-avengers-ironman-wallpaper.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.site-banner .banner-area .author{
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  transform: translate(-50%,-50%);
+}
+
+.site-banner .banner-area .author .author-img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: auto;
+  background: url(wallpapersden.com_iron-man-minimalist_3840x2160.jpg) no-repeat;
+  background-size: 200%;
+  background-position: 50% 0;
+}
+
+.about{
+  background: #000;
+  color: var(--color-yellow);
+}
+.skill{
+  background: var(--color-yellow);
+}
+
+.skill .bars p, .site-content .skill .bars span{
+  line-height: 10px;
+}
+
+
+#footer{
+  background: var(--color-red);
+  color: var(--color-white);
+}
+
+.icons{
+  background: var(--color-red-dark);
+}
+
+#footer form .row .col input[type="text"],
+#footer form .row .col input[type="email"],
+#footer form textarea{
+  border: none;
+  border-radius: 2px;
+  padding: 1.5em 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-red); 
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-yellow); 
+}
+
+@media screen and (min-width:768px){
+  .toggle-button{
+    display: none;
+  }
+  #header{
+    z-index: 0;
+  }
+  
+}
